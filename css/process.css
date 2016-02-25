@@ -1,0 +1,81 @@
+
+#process {
+	padding-top: 75px;
+}
+.process-title {
+	color: rgb(12, 65, 154);
+	background-color: #ACADAC;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70px;
+	padding: 15px 0 15px;
+}
+
+.background-row {
+	background-color: #ACADAC;
+}
+
+.overlay {
+	background-color: rgba(0,0,0,1);
+	color: white;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+	opacity: 0;
+}
+
+.proc-img:hover + .overlay{
+	top: 0;
+	opacity: 1;
+}
+
+.overlay:hover {
+	top: 0;
+	opacity: 1;
+}
+
+.overlay span {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+
+.detail-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#research-list {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+	#process {
+		padding-top: 50px;
+	}
+}
+
+
+@media only screen and (max-width : 500px) {
+	.overlay span {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+	.overlay span {
+		font-size: 10px;
+	}
+}
