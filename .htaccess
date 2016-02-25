@@ -1,0 +1,26 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^robertnolteconstruction.com[nc]
+RewriteRule ^(.*)$ http://www.robertnolteconstruction.com/$1 [r=301,nc]
+
+//Custom 400 errors
+ErrorDocument 400 /home/www/error.html
+
+//Custom 401 errors
+ErrorDocument 401 /home/www/error.html
+
+//Custom 403 errors
+ErrorDocument 403 /home/www/error.html
+
+//Custom 404 errors
+ErrorDocument 404 /home/www/error.html
+
+//Custom 500 errors
+ErrorDocument 500 /home/www/error.html
+
+//Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
