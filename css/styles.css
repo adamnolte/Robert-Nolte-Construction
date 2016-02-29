@@ -52,6 +52,25 @@ img {
 }
 
 /*
+	Error Styles
+*/
+section#error {
+	padding-top: 75px;
+}
+
+.error-text {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+	color: black;
+}
+
+.error-text a{
+	color: black;
+	text-decoration: underline;
+}
+
+/*
 	Navbar
 */
 
@@ -216,6 +235,13 @@ img {
 
 .footer-wrapper .pull-right {
 	text-align:right
+}
+
+/* Keep footer at bottom on error page */
+.error-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 /*
