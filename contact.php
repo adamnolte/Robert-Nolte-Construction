@@ -2,8 +2,8 @@
 	require('phpmailer/class.phpmailer.php');
 	require('phpmailer/class.smtp.php');
 	if(isset($_POST['email'])){
-		$to = 'ajnqm6@mail.missouri.edu';
-		$from = htmlspecialchars($_POST['email']);
+		$to = htmlspecialchars($_POST['email']);
+		$from = 'robert@robertnolteconstruction.com';
 		$name = htmlspecialchars($_POST['name']);
 		$sub = htmlspecialchars($_POST['subject']);
 		$msg = htmlspecialchars($_POST['message']);
@@ -20,7 +20,7 @@
 		$mail->SMTPAuth = true;                          
 		//Provide username and password     
 		$mail->Username = "sender@robertnolteconstruction.com";                 
-		$mail->Password = "1mail1";                           
+		$mail->Password = "";                           
 		//If SMTP requires TLS encryption then set it
 		//$mail->SMTPSecure = "tls";                           
 		//Set TCP port to connect to 
